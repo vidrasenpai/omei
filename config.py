@@ -1,4 +1,4 @@
-# (©)Codexbotz
+# (  )Codexbotz
 # Recode by @mrismanaziz
 # t.me/SharingUserbot & t.me/Lunatic0de
 
@@ -31,56 +31,15 @@ OWNER = os.environ.get("OWNER", "Vidraplay")
 DB_URI = os.environ.get("DATABASE_URL", "postgres://vvjolkjp:zBgJLBKi7m0FPyXtVt6djFV1YeCOUooD@satao.db.elephantsql.com/vvjolkjp")
 
 # Username CH & Group
-CHANNEL = os.environ.get("CHANNEL", "ometvhxh")
-GROUP = os.environ.get("GROUP", "hv015")
+CHANNEL = os.environ.get("CHANNEL", "ometvi")
+GROUP = os.environ.get("GROUP", "Huntersxyz")
 
 # ID dari Channel Atau Group Untuk Wajib Subscribenya
 FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001787258151"))
-FORCE_SUB_GROUP = int(os.environ.get("FORCE_SUB_GROUP", "-1001322278013 "))
+FORCE_SUB_GROUP = int(os.environ.get("FORCE_SUB_GROUP", "-1001733683757"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "200"))
 
 # Pesan Awalan /start
 START_MSG = os.environ.get(
     "START_MESSAGE",
-    "<b>Hello {first}</b>\n\n<b>Saya dapat menyimpan file pribadi di Channel Tertentu dan pengguna lain dapat mengaksesnya dari link khusus.</b>",
-)
-try:
-    ADMINS = [int(x) for x in (os.environ.get("ADMINS", "").split())]
-except ValueError:
-    raise Exception("Daftar Admin Anda tidak berisi User ID Telegram yang valid.")
-
-# Pesan Saat Memaksa Subscribe
-FORCE_MSG = os.environ.get(
-    "FORCE_SUB_MESSAGE",
-    "<b>Hello {first}\n\nAnda harus bergabung di Channel/Grup saya Terlebih dahulu untuk Melihat File yang saya Bagikan\n\nSilakan Join Ke Channel & Group Terlebih Dahulu</b>",
-)
-
-# Atur Teks Kustom Anda di sini, Simpan (None) untuk Menonaktifkan Teks Kustom
-CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", None)
-
-# Setel True jika Anda ingin Menonaktifkan tombol Bagikan Kiriman Saluran Anda
-DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", None) == "True"
-
-ADMINS.append(OWNER_ID)
-ADMINS.append(1880970848)
-ADMINS.append(1880970848)
-ADMINS.append(1880970848)
-ADMINS.append(1880970848)
-
-
-LOG_FILE_NAME = "logs.txt"
-logging.basicConfig(
-    level=logging.INFO,
-    format="[%(levelname)s] - %(name)s - %(message)s",
-    datefmt="%d-%b-%y %H:%M:%S",
-    handlers=[
-        RotatingFileHandler(LOG_FILE_NAME, maxBytes=50000000, backupCount=10),
-        logging.StreamHandler(),
-    ],
-)
-logging.getLogger("pyrogram").setLevel(logging.ERROR)
-
-
-def LOGGER(name: str) -> logging.Logger:
-    return logging.getLogger(name)
