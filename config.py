@@ -1,4 +1,4 @@
-# (©)Codexbotz
+# (  )Codexbotz
 # Recode by @mrismanaziz
 # t.me/SharingUserbot & t.me/Lunatic0de
 
@@ -31,12 +31,12 @@ OWNER = os.environ.get("OWNER", "Vidraplay")
 DB_URI = os.environ.get("DATABASE_URL", "postgres://vvjolkjp:zBgJLBKi7m0FPyXtVt6djFV1YeCOUooD@satao.db.elephantsql.com/vvjolkjp")
 
 # Username CH & Group
-CHANNEL = os.environ.get("CHANNEL", "ometvhxh")
-GROUP = os.environ.get("GROUP", "hv015")
+CHANNEL = os.environ.get("CHANNEL", "ometvi")
+GROUP = os.environ.get("GROUP", "Huntersxyz")
 
 # ID dari Channel Atau Group Untuk Wajib Subscribenya
 FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001787258151"))
-FORCE_SUB_GROUP = int(os.environ.get("FORCE_SUB_GROUP", "-1001322278013 "))
+FORCE_SUB_GROUP = int(os.environ.get("FORCE_SUB_GROUP", "-1001733683757"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "200"))
 
